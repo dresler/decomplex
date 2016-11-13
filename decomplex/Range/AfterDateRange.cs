@@ -9,13 +9,11 @@ namespace decomplex.Range
     {
         public DateTime From { get; }
         public DateTime To { get; }
-        public bool InclusiveTo { get; }
 
         public AfterDateRange(Date date)
         {
             From = ((DateTime)date).AddDays(1);
             To = DateTime.MaxValue;
-            InclusiveTo = false;
         }
 
         public override string ToString()

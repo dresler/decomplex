@@ -11,7 +11,7 @@ namespace decomplex.Range
         {
             var isBeforeTo = dateTimeRange.To == DateTime.MaxValue ||
                              dateTimeRange.To > dateTime ||
-                             (dateTimeRange.InclusiveTo && dateTimeRange.To == dateTime);
+                             (dateTimeRange.To.Date == dateTimeRange.To && dateTimeRange.To == dateTime);
             var isAfterFrom = dateTimeRange.From == DateTime.MinValue ||
                               dateTimeRange.From <= dateTime;
 

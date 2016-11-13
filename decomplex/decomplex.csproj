@@ -55,7 +55,7 @@
     <Compile Include="Range\ToDateRange.cs" />
     <Compile Include="Range\FromToDateRange.cs" />
     <Compile Include="Range\DateTimeRangeExtensions.cs" />
-    <Compile Include="Range\ExactDateTimeRange.cs" />
+    <Compile Include="Range\NonZeroTimeToRange.cs" />
     <Compile Include="Range\IDateTimeRange.cs" />
     <Compile Include="Range\OneDayRange.cs" />
     <Compile Include="ReturnExpression.cs" />

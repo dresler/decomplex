@@ -16,10 +16,5 @@ namespace decomplex.Range
         /// To datetime. If To == DateTime.MaxValue then no upper limit is specified.
         /// </summary>
         DateTime To { get; }
-
-        /// <summary>
-        /// Is the upper limit inclusive.
-        /// </summary>
-        bool InclusiveTo { get; }
     }
 }

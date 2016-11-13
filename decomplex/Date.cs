@@ -15,6 +15,14 @@ namespace decomplex
             Day = dateTime.Day;
         }
 
+        public Date(int year, int month, int day)
+        {
+            // TODO: Add checks.
+            Year = year;
+            Month = month;
+            Day = day;
+        }
+
         public override int GetHashCode()
         {
             return Year.GetHashCode() ^ Month.GetHashCode() ^ Day.GetHashCode();

@@ -15,37 +15,37 @@ namespace decomplex.MsSql
         {
             var isFromDefined = dateTimeRange.From != DateTime.MinValue;
             var isToDefined = dateTimeRange.To != DateTime.MaxValue;
+            var isInclusiveTo = isToDefined && dateTimeRange.To.Date != dateTimeRange.To;
 
             var fromMsSqlLiteral = dateTimeRange.From.ToMsSqlLiteral();
             var toMsSqlLiteral = dateTimeRange.To.ToMsSqlLiteral();
 
-            var isFromToInclusive = isFromDefined && isToDefined && dateTimeRange.InclusiveTo;
+            var isFromToInclusive = isFromDefined && isToDefined && isInclusiveTo;
             
             if (isFromToInclusive)
             {
                 return $"{column} BETWEEN {fromMsSqlLiteral} AND {toMsSqlLiteral}";
             }
 
-            var isFromToExclusive = isFromDefined && isToDefined && !dateTimeRange.InclusiveTo;
+            var isFromToExclusive = isFromDefined && isToDefined;
 
             if (isFromToExclusive)
             {
                 return $"{column} >= {fromMsSqlLiteral} AND {column} < {toMsSqlLiteral}";
             }
 
-            var isOnlyFrom = isFromDefined && !isToDefined;
+            var isOnlyFrom = isFromDefined;
 
             if (isOnlyFrom)
             {
                 return $"{column} >= {fromMsSqlLiteral}";
             }
 
-            var isOnlyTo = !isFromDefined && isToDefined;
+            var isOnlyTo = isToDefined;
 
             if (isOnlyTo)
             {
-                var @operator = dateTimeRange.InclusiveTo ? "<=" : "<";
-                return $"{column} {@operator} {toMsSqlLiteral}";
+                return $"{column} {(isInclusiveTo ? "<=" : "<")} {toMsSqlLiteral}";
             }
 
             return $"{column} IS NOT NULL";
