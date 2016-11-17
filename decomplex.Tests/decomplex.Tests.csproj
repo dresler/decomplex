@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompositeHandlerBaseTests.cs" />
+    <Compile Include="DecimalRoundingExtensionsTests.cs" />
     <Compile Include="MapperTests.cs" />
     <Compile Include="MsSql\DateTimeRangeMsSqlExtensionsTests.cs" />
     <Compile Include="MsSql\DateTimeRangeIntegrationTests.cs" />

@@ -40,6 +40,7 @@
     <Compile Include="AttributeExtensions.cs" />
     <Compile Include="CompositeHandlerBase.cs" />
     <Compile Include="Date.cs" />
+    <Compile Include="DecimalRoundingExtensions.cs" />
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="IHandler.cs" />
     <Compile Include="IMapper.cs" />
