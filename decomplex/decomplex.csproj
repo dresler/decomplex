@@ -39,14 +39,19 @@
   <ItemGroup>
     <Compile Include="AttributeExtensions.cs" />
     <Compile Include="CompositeHandlerBase.cs" />
+    <Compile Include="Finance\CurrencyCountryAttribute.cs" />
+    <Compile Include="Finance\CurrencyDefinitionAttribute.cs" />
+    <Compile Include="Finance\Money.cs" />
     <Compile Include="Date.cs" />
     <Compile Include="DecimalRoundingExtensions.cs" />
     <Compile Include="EnumerableExtensions.cs" />
+    <Compile Include="Finance\MoneyDefaultCurrency.cs" />
     <Compile Include="IHandler.cs" />
     <Compile Include="IMapper.cs" />
     <Compile Include="IReturnExpression.cs" />
     <Compile Include="KeyPredicate.cs" />
     <Compile Include="Mapper.cs" />
+    <Compile Include="Finance\CurrencyType.cs" />
     <Compile Include="MsSql\DateTimeRangeMsSqlExtensions.cs" />
     <Compile Include="MsSql\DateTimeMsSqlExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

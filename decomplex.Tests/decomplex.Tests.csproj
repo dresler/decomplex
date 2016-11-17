@@ -50,6 +50,9 @@
   <ItemGroup>
     <Compile Include="CompositeHandlerBaseTests.cs" />
     <Compile Include="DecimalRoundingExtensionsTests.cs" />
+    <Compile Include="Finance\MoneyTests.cs" />
+    <Compile Include="Finance\MoneyDefaultCurrencyTests.cs" />
+    <Compile Include="Helpers\CurrencyTypeCreator.cs" />
     <Compile Include="MapperTests.cs" />
     <Compile Include="MsSql\DateTimeRangeMsSqlExtensionsTests.cs" />
     <Compile Include="MsSql\DateTimeRangeIntegrationTests.cs" />
