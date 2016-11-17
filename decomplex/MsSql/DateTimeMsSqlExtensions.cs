@@ -5,7 +5,7 @@ namespace decomplex.MsSql
     /// <summary>
     /// MS SQL server extensions for DateTime.
     /// </summary>
-    public static class MsSqlDateTimeExtensions
+    public static class DateTimeMsSqlExtensions
     {
         /// <summary>
         /// Returns MS SQL server datetime literal for DateTime value.
