@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChainOfResponsibility\ChainOfResponsibilityBaseTests.cs" />
     <Compile Include="ExpiringCachedContentBaseTests.cs" />
     <Compile Include="CompositeHandlerBaseTests.cs" />
     <Compile Include="DecimalRoundingExtensionsTests.cs" />

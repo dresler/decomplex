@@ -38,6 +38,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AttributeExtensions.cs" />
+    <Compile Include="ChainOfResponsibility\ChainOfResponsibilityBase.cs" />
+    <Compile Include="ChainOfResponsibility\ChainOfResponsibilityOrderIndexAttribute.cs" />
+    <Compile Include="ChainOfResponsibility\IMessageHandlerWithResponse.cs" />
+    <Compile Include="ChainOfResponsibility\IMessageHandlerWithResponseConstruction.cs" />
+    <Compile Include="ChainOfResponsibility\IRegisterNext.cs" />
+    <Compile Include="ChainOfResponsibility\MessageHandlerWithResponseBase.cs" />
     <Compile Include="CompositeHandlerBase.cs" />
     <Compile Include="Finance\CurrencyCountryAttribute.cs" />
     <Compile Include="Finance\CurrencyDefinitionAttribute.cs" />
