@@ -24,5 +24,16 @@ namespace decomplex
                 action(item);
             }
         }
+
+        /// <summary>
+        /// Returns IEnumerable with only one item.
+        /// </summary>
+        /// <typeparam name="TItem">Type of item.</typeparam>
+        /// <param name="item">Item to be put in collection.</param>
+        /// <returns>Collection with the item.</returns>
+        public static IEnumerable<TItem> Yield<TItem>(TItem item)
+        {
+            yield return item;
+        }
     }
 }
