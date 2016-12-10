@@ -44,6 +44,7 @@
     <Compile Include="ChainOfResponsibility\IMessageHandlerWithResponseConstruction.cs" />
     <Compile Include="ChainOfResponsibility\IRegisterNext.cs" />
     <Compile Include="ChainOfResponsibility\MessageHandlerWithResponseBase.cs" />
+    <Compile Include="ComparisonExtensions.cs" />
     <Compile Include="CompositeHandlerBase.cs" />
     <Compile Include="Finance\CurrencyCountryAttribute.cs" />
     <Compile Include="Finance\CurrencyDefinitionAttribute.cs" />

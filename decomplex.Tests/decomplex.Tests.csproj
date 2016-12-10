@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChainOfResponsibility\ChainOfResponsibilityBaseTests.cs" />
+    <Compile Include="ComparisonExtensionsTests.cs" />
     <Compile Include="EnumerableExtensionsTests.cs" />
     <Compile Include="ExpiringCachedContentBaseTests.cs" />
     <Compile Include="CompositeHandlerBaseTests.cs" />
