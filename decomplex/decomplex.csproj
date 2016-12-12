@@ -37,21 +37,21 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AttributeExtensions.cs" />
     <Compile Include="ChainOfResponsibility\ChainOfResponsibilityBase.cs" />
     <Compile Include="ChainOfResponsibility\ChainOfResponsibilityOrderIndexAttribute.cs" />
     <Compile Include="ChainOfResponsibility\IMessageHandlerWithResponse.cs" />
     <Compile Include="ChainOfResponsibility\IMessageHandlerWithResponseConstruction.cs" />
     <Compile Include="ChainOfResponsibility\IRegisterNext.cs" />
     <Compile Include="ChainOfResponsibility\MessageHandlerWithResponseBase.cs" />
-    <Compile Include="ComparisonExtensions.cs" />
     <Compile Include="CompositeHandlerBase.cs" />
+    <Compile Include="Extensions\AttributeExtensions.cs" />
+    <Compile Include="Extensions\ComparisonExtensions.cs" />
+    <Compile Include="Extensions\DecimalRoundingExtensions.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Finance\CurrencyCountryAttribute.cs" />
     <Compile Include="Finance\CurrencyDefinitionAttribute.cs" />
     <Compile Include="Finance\Money.cs" />
     <Compile Include="Date.cs" />
-    <Compile Include="DecimalRoundingExtensions.cs" />
-    <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="Finance\MoneyDefaultCurrency.cs" />
     <Compile Include="IDateTimeNowProvider.cs" />
     <Compile Include="Finance\CurrencyType.cs" />

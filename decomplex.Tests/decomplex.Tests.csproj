@@ -57,11 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChainOfResponsibility\ChainOfResponsibilityBaseTests.cs" />
-    <Compile Include="ComparisonExtensionsTests.cs" />
-    <Compile Include="EnumerableExtensionsTests.cs" />
     <Compile Include="ExpiringCachedContentBaseTests.cs" />
     <Compile Include="CompositeHandlerBaseTests.cs" />
-    <Compile Include="DecimalRoundingExtensionsTests.cs" />
+    <Compile Include="Extensions\ComparisonExtensionsTests.cs" />
+    <Compile Include="Extensions\DecimalRoundingExtensionsTests.cs" />
+    <Compile Include="Extensions\EnumerableExtensionsTests.cs" />
     <Compile Include="Finance\MoneyTests.cs" />
     <Compile Include="Finance\MoneyDefaultCurrencyTests.cs" />
     <Compile Include="Helpers\CurrencyTypeCreator.cs" />

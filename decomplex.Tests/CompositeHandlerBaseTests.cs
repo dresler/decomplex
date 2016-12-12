@@ -31,9 +31,6 @@ namespace decomplex.Tests
             var handlerFoo = MockRepository.GenerateStub<ITestHandler>();
             handlerFoo.Stub(h => h.IsFor(MyEnum.Foo)).Return(true);
 
-            var fooHandlerWasInvoked = false;
-            handlerFoo.Stub(h => h.Handle(Arg<MyEnum>.Is.Anything)).WhenCalled(_ => fooHandlerWasInvoked = true);
-
             var handler = new TestCompositeHandler(new [] { handlerFoo });
 
             Assert.Throws<ArgumentException>(() => handler.Handle(MyEnum.Bar));
@@ -58,6 +55,7 @@ namespace decomplex.Tests
             
             handler.Handle(MyEnum.Foo);
 
+            // TODO dresler: Separate the assers
             Assert.IsTrue(fooHandlerAWasInvoked);
             Assert.IsTrue(fooHandlerBWasInvoked);
         }
