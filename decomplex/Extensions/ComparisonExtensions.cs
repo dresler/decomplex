@@ -2,7 +2,7 @@ using System.Globalization;
 using System.Linq;
 using System.Threading;
 
-namespace decomplex
+namespace decomplex.Extensions
 {
     /// <summary>
     /// Extension methods to simplify comparisons.

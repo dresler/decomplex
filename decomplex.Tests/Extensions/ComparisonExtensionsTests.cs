@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Globalization;
 using System.Threading;
+using decomplex.Extensions;
 using NUnit.Framework;
 
-namespace decomplex.Tests
+namespace decomplex.Tests.Extensions
 {
     [TestFixture]
     public class ComparisonExtensionsTests

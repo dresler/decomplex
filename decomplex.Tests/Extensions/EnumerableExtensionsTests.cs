@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using decomplex.Extensions;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace decomplex.Tests
+namespace decomplex.Tests.Extensions
 {
     [TestFixture]
     public class EnumerableExtensionsTests

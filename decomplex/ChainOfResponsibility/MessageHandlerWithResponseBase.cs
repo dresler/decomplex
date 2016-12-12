@@ -1,3 +1,5 @@
+using decomplex.Extensions;
+
 namespace decomplex.ChainOfResponsibility
 {
     public abstract class MessageHandlerWithResponseBase<TMessage, TResponse> : IMessageHandlerWithResponseConstruction<TMessage,TResponse>

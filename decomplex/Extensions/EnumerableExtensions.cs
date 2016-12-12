@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace decomplex
+namespace decomplex.Extensions
 {
     /// <summary>
     /// Extension methods for IEnumerable.

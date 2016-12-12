@@ -1,6 +1,7 @@
-﻿using NUnit.Framework;
+﻿using decomplex.Extensions;
+using NUnit.Framework;
 
-namespace decomplex.Tests
+namespace decomplex.Tests.Extensions
 {
     [TestFixture]
     public class DecimalRoundingExtensionsTests

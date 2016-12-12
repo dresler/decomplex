@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace decomplex
+namespace decomplex.Extensions
 {
     /// <summary>
     /// Example of extensions to round decimals. 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace decomplex
+namespace decomplex.Extensions
 {
     /// <summary>
     /// Extension methods for attributes.
