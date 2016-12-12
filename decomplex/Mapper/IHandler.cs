@@ -1,4 +1,4 @@
-namespace decomplex
+namespace decomplex.Mapper
 {
     public interface IHandler<TData>
     {

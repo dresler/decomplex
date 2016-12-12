@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace decomplex
+namespace decomplex.Mapper
 {
     public class Mapper<TKey, TValue> : IMapper<TKey, TValue>
     {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using decomplex.Mapper;
 using NUnit.Framework;
 using Rhino.Mocks;
 

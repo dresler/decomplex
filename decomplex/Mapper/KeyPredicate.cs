@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace decomplex
+namespace decomplex.Mapper
 {
     internal class KeyPredicate<TKey>
     {

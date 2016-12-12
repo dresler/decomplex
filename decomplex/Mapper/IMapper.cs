@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace decomplex
+namespace decomplex.Mapper
 {
     public interface IMapper<TKey, TValue>
     {

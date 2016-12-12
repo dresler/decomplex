@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using decomplex.Mapper;
 using NUnit.Framework;
 
-namespace decomplex.Tests
+namespace decomplex.Tests.Mapper
 {
     [TestFixture]
     public class MapperTests

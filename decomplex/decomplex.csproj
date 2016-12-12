@@ -54,12 +54,14 @@
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="Finance\MoneyDefaultCurrency.cs" />
     <Compile Include="IDateTimeNowProvider.cs" />
-    <Compile Include="IHandler.cs" />
-    <Compile Include="IMapper.cs" />
-    <Compile Include="IReturnExpression.cs" />
-    <Compile Include="KeyPredicate.cs" />
-    <Compile Include="Mapper.cs" />
     <Compile Include="Finance\CurrencyType.cs" />
+    <Compile Include="Mapper\IHandler.cs" />
+    <Compile Include="Mapper\IMapper.cs" />
+    <Compile Include="Mapper\IReturnExpression.cs" />
+    <Compile Include="Mapper\KeyPredicate.cs" />
+    <Compile Include="Mapper\Mapper.cs" />
+    <Compile Include="Mapper\ReturnExpression.cs" />
+    <Compile Include="Mapper\ValueFunc.cs" />
     <Compile Include="MsSql\DateTimeRangeMsSqlExtensions.cs" />
     <Compile Include="MsSql\DateTimeMsSqlExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,9 +74,7 @@
     <Compile Include="Range\NonZeroTimeToRange.cs" />
     <Compile Include="Range\IDateTimeRange.cs" />
     <Compile Include="Range\OneDayRange.cs" />
-    <Compile Include="ReturnExpression.cs" />
     <Compile Include="ExpiringCachedContentBase.cs" />
-    <Compile Include="ValueFunc.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
