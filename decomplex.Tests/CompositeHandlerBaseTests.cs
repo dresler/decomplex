@@ -55,7 +55,7 @@ namespace decomplex.Tests
             
             handler.Handle(MyEnum.Foo);
 
-            // TODO dresler: Separate the assers
+            // TODO dresler: Separate the asserts
             Assert.IsTrue(fooHandlerAWasInvoked);
             Assert.IsTrue(fooHandlerBWasInvoked);
         }

@@ -46,5 +46,21 @@ namespace decomplex.Tests.Extensions
             var result = new int?().Yield();
             result.ShouldBeEquivalentTo(new int?[] {null});
         }
+
+        [Test]
+        public void ToReadOnlyCollection_ForACollection_ShouldReturnExpectedType()
+        {
+            IEnumerable<int> collection = new[] {1, 2, 3};
+
+            var result = collection.ToReadOnlyCollection();
+
+            Assert.IsInstanceOf<IReadOnlyCollection<int>>(result);
+        }
+
+        [Test]
+        public void ToReadOnlyCollection_ForNullCollection_ShouldThrowArgumentNullException()
+        {
+            Assert.Throws<ArgumentNullException>(() => (null as IEnumerable<int>).ToReadOnlyCollection());
+        }
     }
 }

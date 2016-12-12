@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace decomplex.Extensions
 {
@@ -34,6 +35,17 @@ namespace decomplex.Extensions
         public static IEnumerable<TItem> Yield<TItem>(this TItem item)
         {
             yield return item;
+        }
+
+        /// <summary>
+        /// Wraps generic IEnumerable<T> to IReadOnlyCollection<T>.
+        /// </summary>
+        /// <typeparam name="T">Type of elements.</typeparam>
+        /// <param name="enumerable">Collection.</param>
+        /// <returns>Instance of IReadOnlyCollection.</returns>
+        public static IReadOnlyCollection<T> ToReadOnlyCollection<T>(this IEnumerable<T> enumerable)
+        {
+            return enumerable.ToList().AsReadOnly();
         }
     }
 }
