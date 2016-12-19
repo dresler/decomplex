@@ -45,6 +45,7 @@
     <Compile Include="ChainOfResponsibility\IRegisterNext.cs" />
     <Compile Include="ChainOfResponsibility\MessageHandlerWithResponseBase.cs" />
     <Compile Include="CompositeHandlerBase.cs" />
+    <Compile Include="DateTimeCondition.cs" />
     <Compile Include="Extensions\AttributeExtensions.cs" />
     <Compile Include="Extensions\ComparisonExtensions.cs" />
     <Compile Include="Extensions\DecimalRoundingExtensions.cs" />
